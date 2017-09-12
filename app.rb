@@ -3,8 +3,18 @@ require('sinatra/reloader')
 require('./lib/sphinx')
 
 get('/') do
-  @description = "This is a riddle checker"
+  @description = "You wake up in the middle of the desert, and an odd creature with the head of a man and the body of a cat demands.. you answer riddles?"
   erb(:input)
+end
+
+get('/layout_2') do
+  @description = "You have entered the bog, and stumble upon.. the same sphinx?"
+  erb(:input2)
+end
+
+get('/layout_3') do
+  @description = "This is working!"
+  erb(:input3)
 end
 
 post('/output') do

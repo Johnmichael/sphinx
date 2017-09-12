@@ -23,32 +23,33 @@ end
     else false
   end
 end
+end
 
-
-# class Riddle_Two
-#   def initialize(q1, q2, q3)
-#     @q1 = q1.upcase.delete(' '+'THE'+'A'+'N')
-#     @q2 = q2.upcase.delete(' '+'THE'+'A'+'N')
-#     @q3 = q3.upcase.delete(' '+'THE'+'A'+'N')
-#   end
-#   def query4?
-#     if @q1 === 'UM'
-#       true
-#     else false
-#   end
-# end
-#   def query5?
-#     if @q2 === 'UMBRLL'
-#       true
-#     else false
-#   end
-# end
-#   def query6?
-#     if @q3 === 'SILC'
-#       true
-#     else false
-#   end
-# end
+class Riddle_Two
+  def initialize(q1, q2, q3)
+    @q1 = q1.upcase.delete(' '+'THE'+'A'+'N')
+    @q2 = q2.upcase.delete(' '+'THE'+'A'+'N')
+    @q3 = q3.upcase.delete(' '+'THE'+'A'+'N')
+  end
+  def query4?
+    if @q1 === 'UM'
+      true
+    else false
+  end
+end
+  def query5?
+    if @q2 === 'RFLCIO'
+      true
+    else false
+  end
+end
+  def query6?
+    if @q3 === 'OO'
+      true
+    else false
+  end
+end
+end
 #
 #
 # class Riddle_Three
@@ -75,4 +76,4 @@ end
 #     else false
 #   end
 # end
-end
+# end

@@ -17,7 +17,22 @@ describe('#query3?') do
         expect(Riddle_One.new('CLNDR', 'b', 'c').query1?).to(eq(true))
         end
       end
+end
 
-
-
+describe('Riddle_Two') do
+describe('#query6?') do
+  it("tell the user the first riddle, and returns true or false for the answer") do
+    expect(Riddle_Two.new('a', 'b', 'OO').query6?).to(eq(true))
+    end
+  end
+  describe('#query5?') do
+    it("tell the user the second riddle, and returns true or false for the answer") do
+      expect(Riddle_Two.new('a', 'RFLCIO', 'c').query5?).to(eq(true))
+      end
+    end
+    describe('#query4?') do
+      it("tell the user the third riddle, and returns true or false for the answer") do
+        expect(Riddle_Two.new('UM', 'b', 'c').query4?).to(eq(true))
+        end
+      end
 end

@@ -1,24 +1,19 @@
-<h1><%= @description %></h1>
-<h1>Answer these riddles!</h1>
 
-<form action="/output" id="riddle4">
+<h3><%= @description %></h3>
+
+
+<form action="/output" method="post">
   <div class="form-group">
     <label for="q1">When I am young, I go on four legs, then I go on two legs, then I go on three legs, and then I die.</label>
-    <input id="4" name="q1" class="form-control" type="text">
+    <input id="1" name="q1" class="form-control" type="text">
   </div>
-  <button type="submit" class="btn button1">Go!</button>
-  </form>
-  <form action="/output" id = "riddle5">
   <div class="form-group">
     <label for="q2">You can see me in water, but I never get wet. What am I?</label>
-    <input id="5" name="q2" class="form-control" type="text">
+    <input id="2" name="q2" class="form-control" type="text">
   </div>
-  <button type="submit" class="btn button2">Go!</button>
-</form>
-  <form action="/output" id='riddle6'>
-  <div class="form-group" >
+  <div class="form-group question3" >
     <label for="q3">What 4-letter word can be written forward, backward or upside down, and can still be read from left to right?</label>
-    <input id="6" name="q3" class="form-control" type="text">
+    <input id="3" name="q3" class="form-control" type="text">
   </div>
-  <button type="submit" class="btn button3">Go!</button>
+  <button type="submit" class="btn">Go!</button>
 </form>
