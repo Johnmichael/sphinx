@@ -13,6 +13,11 @@ post('/output') do
   @q3 = params.fetch('q3')
 
   answer = Riddle_One.new(@q1, @q2, @q3)
-  @output1 = answer.query1?
+  @output1 = answer.query1? & answer.query2? & answer.query3?
+  if @output1 === true
   erb(:output)
+else
+
+  erb(:output_failure)
+end
 end
