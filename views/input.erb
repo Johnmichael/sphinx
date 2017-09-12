@@ -1,0 +1,18 @@
+<h1><%= @description %></h1>
+<h2>Answer these riddles!</h2>
+
+<form action="/output" method="post">
+  <div class="form-group">
+    <label for="q1">No matter how little or how much you use me, you change me every month. What am I?</label>
+    <input id="1" name="q1" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="q2">I go up when rain comes down. What am I?</label>
+    <input id="2" name="q2" class="form-control" type="text">
+  </div>
+  <div class="form-group question3" >
+    <label for="q3">You can't see me. You can't touch me. You can't hear me. You can't taste me. You can use me or create me. You can find me. I can be interrupted easily. Some enjoy me and othes fear me. What am I?</label>
+    <input id="3" name="q3" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>
