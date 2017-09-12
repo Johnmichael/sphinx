@@ -36,3 +36,21 @@ describe('#query6?') do
         end
       end
 end
+
+describe('Riddle_Three') do
+describe('#query9?') do
+  it("tell the user the first riddle, and returns true or false for the answer") do
+    expect(Riddle_Three.new('a', 'b', 'ROUBL').query9?).to(eq(true))
+    end
+  end
+  describe('#query8?') do
+    it("tell the user the second riddle, and returns true or false for the answer") do
+      expect(Riddle_Three.new('a', 'MRRIDCOUPLS', 'c').query8?).to(eq(true))
+      end
+    end
+    describe('#query7?') do
+      it("tell the user the third riddle, and returns true or false for the answer") do
+        expect(Riddle_Three.new('MP', 'b', 'c').query7?).to(eq(true))
+        end
+      end
+end

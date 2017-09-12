@@ -25,9 +25,36 @@ post('/output') do
   answer = Riddle_One.new(@q1, @q2, @q3)
   @output1 = answer.query1? & answer.query2? & answer.query3?
   if @output1 === true
-  erb(:output)
-else
-
-  erb(:output_failure)
+    erb(:output)
+  else
+    erb(:output_failure)
+  end
 end
+
+post('/output_2') do
+  @q4 = params.fetch('q4')
+  @q5 = params.fetch('q5')
+  @q6 = params.fetch('q6')
+
+  answer2 = Riddle_Two.new(@q4, @q5, @q6)
+  @output2 = answer2.query4? & answer2.query5? & answer2.query6?
+  if @output2 === true
+    erb(:output_2)
+  else
+    erb(:output_2)
+  end
+end
+
+post('/output_3') do
+  @q7 = params.fetch('q7')
+  @q8 = params.fetch('q8')
+  @q9 = params.fetch('q9')
+
+  answer3 = Riddle_Three.new(@q7, @q8, @q9)
+  @output3 = answer3.query7? & answer3.query8? & answer3.query9?
+  if @output3 === true
+    erb(:output_3)
+  else
+    erb(:output_3)
+  end
 end
